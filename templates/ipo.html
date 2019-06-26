@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>Upcoming IPO: </h1>
+{% for corp in corps %}
+	<h2>{{corp.name}}</h2>
+	<p>HomePage: {{corp.link}} </p>
+	<p>Employee: {{corp.nemp}}</p>
+	<p>Income: {{corp.ninc}}</p>
+	<p>IPO date: {{corp.dtime}}</p>
+	<p>Industry: {{corp.domain}}</p>
+	<p>Bussiness: {{corp.des}}</p>
+{% endfor%}
+</body>
+</html>
+

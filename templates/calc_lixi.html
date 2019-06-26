@@ -1,0 +1,39 @@
+<script type="text/javascript">
+function calc_lixi(){
+	money = document.getElementsByName('borrow')[0].value;
+	pay = document.getElementsByName('pay')[0].value;
+	nmonth = document.getElementsByName('nmonth')[0].value;
+	var res = 1;
+	if( pay * 1.0 * nmonth <= 1.0 * money){
+		
+		document.getElementsByName("loan")[0].value = "负/无利息";
+		return
+	}
+	for(var i=0; i<10000; ++i){
+		var zhexian = 0;
+		for(var j = 1; j <= 12; ++j){
+			zhexian += pay/ Math.pow(1+i/10000.0, j);
+		}
+		if( zhexian < money ){
+			res = Math.pow(1 + i/10000.0, 12);
+			break;
+		}
+	}
+	document.getElementsByName("loan")[0].value = res;
+}
+</script>
+<table>
+<tr>
+<td>总借款额: </td> <td> <input type="text" name="borrow" /> </td>
+</tr>
+<tr>
+<td>每月还款: </td><td><input type="text" name="pay" />   </td>
+</tr>
+<tr>
+<td>还几个月: </td><td><input type="text" name="nmonth" /></td>
+</tr>
+<tr>
+<td><input type="button" value="计算利息" onclick="calc_lixi()" /> </td><td>
+年息:<input type="text" name="loan"/></td>
+</tr>
+</table>

@@ -1,0 +1,347 @@
+<html>
+	<style type="text/css"> 
+	input{ border: none; overflow: hidden; height: 100%; width: 100%;
+		size="1"; pattern="[0-9]";		
+	}
+	</style>
+	<script src="./static/jquery-2.1.1.min.js"></script>
+
+	<table border="1" width="70px" align="center">
+		<tr><td>
+	<input type="button" value="解数独" id="solve"/></br>
+			</td></tr>
+		<tr>
+			<td>
+	<input type="button" value="出题" id="question"/></br>
+			</td>
+		</tr>
+	</table>
+		<p id="info"> <p/>			
+	<table border="1" width="480px" align="center">
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+		<tr>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+			<td height="40px" width="20px"><input type="text"></td>
+		</tr>
+	</table>
+	<p id="p1"></p>
+	<p id="p2"><button id="check" onclick="check()">检查结果 </button></p>
+	<p id="p3"><button id="clear" onclick="clearVal()">清除结果 </button></p>
+	<script  type="text/javascript">
+		function clearVal(){
+//		alert("c");	
+			ins =document.getElementsByTagName('input');
+			for(var i=2; i<83; ++i){
+				ins[i].value = "";
+				ins[i].style = "color:black";
+			}
+			$("#p1").html("What a  fine day for playing sudoku!"); 
+		}
+		function isRight( s){
+			var rule = new Array();
+			rule[0] = "9";
+			rule[1] = "1";
+			rule[2] = "2";
+			rule[3] = "3";
+			rule[4] = "4";
+			rule[5] = "5";
+			rule[6] = "6";
+			rule[7] = "7";
+			rule[8] = "8";
+			//alert(" rule ");
+			//alert(rule.length);
+				for( var i = 0 ; i<9; ++i ){
+					//alert( rule[i] + "__");
+					if(!s.has(rule[i])){
+						return false;
+					}
+				}
+			return true;
+		}
+		function check(){
+			ins =document.getElementsByTagName('input');
+			var mat = new Array();
+			for(var i=0; i< 9; ++i){
+				mat[i] = new Array();
+				for(var j=0; j<9; ++j)
+					mat[i][j] = ins[2 + i*9 +j].value;
+			}
+			for(var i=0; i<9; ++i){
+				var s = new Set();
+				for(var j=0; j<9; ++j){
+					s.add( mat[i][j]);
+				}
+	  			//alert(s.size);
+				if(!isRight(s)){
+					alert("Wrong");
+					return;
+				}
+			}
+			for(var i=0; i<9; ++i){
+				var s = new Set();
+				for(var j=0; j<9; ++j){
+					s.add( mat[j][i]);
+				}
+				if(!isRight(s)){
+					alert("Wrong");
+					return;
+				}
+			}
+			for(var i=0; i<3; ++i){
+		     	    for(var j=0; j<3; ++j){
+				var s = new Set();
+				for( var ii = 0; ii<3; ii++){
+				    for(var jj=0; jj<3; ++jj){
+				    	s.add( mat[i*3 +ii][j*3+jj]);
+				    }    
+				}
+				if(!isRight(s)){
+					alert("Wrong");
+					return;
+				}
+			    }
+			}
+			alert("you are right!");
+		
+		};
+	 	function ps(){
+			//alert(1);
+	 		ins = document.getElementsByTagName("input");
+	 		s = "";
+			var cnt_num = 0
+			for(i = 2; i<=82; ++i){
+				c = "";
+				if(ins[i].value.length == 0)
+					c = "0";
+				else if(ins[i].value.length > 1){
+					ins[2].value = "非法输入";
+					return;
+				}else{
+					if(ins[i].value >= "0" && ins[i].value <= "9")
+						c = ins[i].value;
+					else{
+						ins[2].value = "非法输入";
+						return;
+					}
+				}
+				s += c;
+				if( ins[i].value >= "1" && ins[i].value <= "9"){
+					cnt_num = 1 + cnt_num;
+				}
+			}
+			//alert("cnt");
+			//alert(cnt_num);
+			if(cnt_num < 19){
+				 $("#p1").text( "太难or不合理");
+				return "h";
+			}else if(cnt_num >= 60){
+				$("#p1").html("太简单");
+				return "e";
+			}
+			//alert(s);
+			return s;
+	 	};
+		
+	</script>
+	<script type="text/javascript">
+		function fill(ans){
+			if(ans.length == 81){
+				for(var i=2; i<=82; ++i){
+					if( ans.charAt(i-2) != ins[i].value ){
+						ins[i].value = ans.charAt(i-2);
+						ins[i].style = "color:red";
+					}
+				}
+			}else{
+				$("#p1").text(ans);
+			}
+		}	
+		function fillq(ans){
+			//alert("fill");
+	 		ins = document.getElementsByTagName("input");
+		//	ins[0].value = "y";
+		//	alert(ins.length);
+			if(ans.length == 81){
+		//		alert("char");
+		//		alert(ans);
+				for(var i=2; i<=82; ++i){
+					ins[i].style = "color:black";
+					if( ans.charAt(i-2) != "0" ){
+						ins[i].value = ans.charAt(i-2);
+	 					ins[i].style = "color:blue";
+					//	$("input")[i].val(ans.charAt(i-1));
+					}else{
+						ins[i].value = "";
+					}
+				}
+			}else{
+				$("#p1").text("系统错误");
+			}
+		};	
+		$("#p1").html("What a  fine day for playing sudoku!"); 
+		$(function(){
+			idx = -1;
+		    $("#solve").bind("click", function(){
+			var ques = ps();
+			    if(ques.length != 81){
+			   	//alert(3);
+				    return 0;
+			    }
+			//alert(8);
+			//alert(ques);
+			$("#p1").text("计算中...");
+			var maxreq = 0;
+			var interval = setInterval(function(){
+				maxreq = maxreq +1;
+				if( $("#p1").text() == "计算中..."){	
+		    		    $.getJSON(
+					"/solve_sudoku",
+					{question : ques},
+					function(data){
+						//alert(79);
+					//	ans = data['answer'];
+						//alert(ans);
+						$("#p1").text("查看结果");
+						fill(data['answer']);
+						clearInterval(interval);
+		//			$("#p1").html(ans)	;
+					}
+				    );
+				    
+				}
+				if(maxreq >= 25){
+					if(("#p1").text()=="计算中...")
+						$("#p1").text("今天太累，下次再说");
+					clearInterval(interval);
+				}
+			}, 500);
+			//alert(222);    
+		    });	
+		});
+//		alert(11);
+		$(function(){
+			var maxreq = 0;
+		    $("#question").bind("click", function(){
+			   // alert(1);
+			var interval2 = setInterval(function(){
+				maxreq  = 1 + maxreq;
+		    		    $.getJSON(
+					"/sudoku_question",
+					{},
+					function(data){
+						//alert(79);
+						ans = data['question'];
+						//alert(ans);
+						fillq(data['question']);
+						//alert("clear");
+						$("#p1").text("What a fine day for playing sudoku!");
+						clearInterval(interval2);
+					}
+				    );
+				    
+				if(maxreq >= 10){
+					$("#p1").text("算得太累，让我歇一歇");
+					clearInterval(interval2);
+				}
+			}, 500);
+			//alert(222);    
+		    });	
+		});
+	</script>
+</html>
+<html>
+	<style type="text/css"> 

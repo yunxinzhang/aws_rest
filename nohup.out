@@ -1,55 +1,367 @@
- * Serving Flask app "test" (lazy loading)
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+w
+ * Serving Flask app "__init__" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on http://172.31.4.61:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 969-834-973
-85.203.47.77 - - [20/Jun/2019 10:34:57] "GET / HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 10:34:58] "GET /favicon.ico HTTP/1.1" 404 -
- * Detected change in '/home/ubuntu/rest/test.py', reloading
-<class 'werkzeug.local.LocalProxy'>
-get >> ImmutableMultiDict([])
- * Restarting with stat
-  File "/home/ubuntu/rest/test.py", line 7
-    zhexian = 0
-              ^
-TabError: inconsistent use of tabs and spaces in indentation
- * Serving Flask app "test" (lazy loading)
+Traceback (most recent call last):
+  File "__init__.py", line 81, in <module>
+    app.run(host="172.31.9.93", port=80, debug=True)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 944, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "__init__" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on http://172.31.4.61:5000/ (Press CTRL+C to quit)
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 969-834-973
-85.203.47.77 - - [20/Jun/2019 11:41:02] "GET / HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 11:41:03] "GET /favicon.ico HTTP/1.1" 404 -
-85.203.47.77 - - [20/Jun/2019 11:41:15] "GET /calc?money=10000&pay=878.33&month=12 HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 11:41:34] "GET /calc?money=10000&pay=878.33&month=12 HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 11:41:34] "GET /favicon.ico HTTP/1.1" 404 -
- * Serving Flask app "test" (lazy loading)
+ * Debugger PIN: 169-982-947
+123.125.5.166 - - [25/Jun/2019 13:57:33] "GET /sudoku HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 13:57:40] "GET /sudoku_question HTTP/1.1" 200 -
+ * Serving Flask app "__init__" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on http://172.31.4.61:5000/ (Press CTRL+C to quit)
+Traceback (most recent call last):
+  File "__init__.py", line 81, in <module>
+    app.run(host="172.31.9.93", port=80, debug=True)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 944, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "__init__.py", line 81, in <module>
+    app.run(host="172.31.9.93", port=80, debug=True)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 944, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+123.125.5.166 - - [25/Jun/2019 14:03:05] "GET / HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:06] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 206 -
+123.125.5.166 - - [25/Jun/2019 14:03:06] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 206 -
+123.125.5.166 - - [25/Jun/2019 14:03:08] "GET /sudoku HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:16] "GET /sudoku_question HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:21] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:27] "GET / HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:30] "GET /calc_lixi HTTP/1.1" 200 -
+123.125.5.166 - - [25/Jun/2019 14:03:35] "GET /ipo_info HTTP/1.1" 200 -
+61.151.178.165 - - [25/Jun/2019 14:11:33] "GET / HTTP/1.1" 200 -
+47.89.192.12 - - [25/Jun/2019 14:52:10] "GET / HTTP/1.1" 200 -
+95.245.209.225 - - [25/Jun/2019 15:40:49] "GET / HTTP/1.0" 200 -
+177.53.40.130 - - [25/Jun/2019 16:09:49] "GET / HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 16:44:04] "GET / HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 16:44:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 16:44:27] "GET / HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 16:44:32] "GET /calc_lixi HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:25] "GET / HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:28] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:30] "GET /static/favicon.ico HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:44] "GET /static/favicon.ico HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:53] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:45:54] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:46:05] "GET /favicon.ico HTTP/1.1" 404 -
+218.98.33.171 - - [25/Jun/2019 16:46:23] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:09] "GET /solve_sudoku?question=001070090400000187005000000003460000500300700800000000000802400009006000010030009 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:24] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:25] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:31] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:41] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:45] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:51] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:54] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:47:55] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 304 -
+218.98.33.171 - - [25/Jun/2019 16:48:05] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:07] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:14] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:18] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:20] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:30] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:42] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:51] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:53] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:52:56] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:53:04] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:53:04] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 16:53:16] "GET /sudoku_question HTTP/1.1" 200 -
+106.12.209.207 - - [25/Jun/2019 17:02:48] "GET /TP/public/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:49] "GET /TP/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:50] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:51] "GET /html/public/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:51] "GET /public/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:52] "GET /TP/html/public/index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:52] "GET /elrekt.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:54] "GET /index.php HTTP/1.1" 404 -
+106.12.209.207 - - [25/Jun/2019 17:02:54] "GET / HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:21:03] "GET / HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:21:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:21:31] "GET /calc_lixi HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:21:35] "GET /ipo_info HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:25:01] "GET /ipo_info HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 17:25:04] "GET /calc_lixi HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 17:35:32] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 969-834-973
-85.203.47.77 - - [20/Jun/2019 12:00:46] "GET / HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 12:00:46] "GET /favicon.ico HTTP/1.1" 404 -
-85.203.47.77 - - [20/Jun/2019 12:00:58] "GET /calc?money=10000&pay=878.33&month=12 HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 12:00:58] "GET /favicon.ico HTTP/1.1" 404 -
-85.203.47.77 - - [20/Jun/2019 12:01:35] "GET /calc?money=10000&pay=878.33&month=12 HTTP/1.1" 200 -
-85.203.47.77 - - [20/Jun/2019 12:01:36] "GET /favicon.ico HTTP/1.1" 404 -
-117.136.0.253 - - [20/Jun/2019 12:03:52] "GET /calc?money=10000&pay=878.33&month=12&nsukey=JIxppa1aq0FjUXdOaz4fa2Rtw7%2FutzqfZL9SWqkWXlRrT82897Kesy6lbRkHqYfQzIIvNRrVSdej9sJ69v2cAJuasGu14XSnxj1K3YUKPeOXSS2rXVbXX31gVWjc%2B1BGdHjnLUSdnm%2FfB4fptvLk%2BRfldyHlr3EmyTAgBjmaudpbQjX%2FHVThNopwQ%2FZM1upJCq7JMMx6hdxDKl0s%2F5kPFw%3D%3D HTTP/1.1" 200 -
-180.97.118.219 - - [20/Jun/2019 12:04:52] "GET /calc?money=10000&pay=878.33&month=12&nsukey=JIxppa1aq0FjUXdOaz4fa2Rtw7%2FutzqfZL9SWqkWXlRrT82897Kesy6lbRkHqYfQzIIvNRrVSdej9sJ69v2cAJuasGu14XSnxj1K3YUKPeOXSS2rXVbXX31gVWjc%2B1BGdHjnLUSdnm%2FfB4fptvLk%2BRfldyHlr3EmyTAgBjmaudpbQjX%2FHVThNopwQ%2FZM1upJCq7JMMx6hdxDKl0s%2F5kPFw%3D%3D HTTP/1.1" 200 -
-85.203.47.72 - - [20/Jun/2019 14:55:49] "GET /calc?money=10000&pay=878.33&month=12 HTTP/1.1" 200 -
-85.203.47.72 - - [20/Jun/2019 14:55:49] "GET /favicon.ico HTTP/1.1" 404 -
-85.203.47.72 - - [20/Jun/2019 14:55:55] "GET /calc?money=10000&pay=878.33&month=13 HTTP/1.1" 200 -
-85.203.47.72 - - [20/Jun/2019 14:56:29] "GET / HTTP/1.1" 200 -
-223.71.30.18 - - [20/Jun/2019 15:05:03] "GET / HTTP/1.1" 200 -
+ * Debugger PIN: 169-982-947
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [25/Jun/2019 20:06:07] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 20:06:11] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 20:06:13] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 20:06:16] "GET /sudoku_question HTTP/1.1" 200 -
+1
+start solve 12
+end solve 13
+1
+218.98.33.171 - - [25/Jun/2019 20:08:55] "GET /solve_sudoku?question=500090201002007008080000300014005000000903000000800940003000060600200100809060005 HTTP/1.1" 200 -
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [25/Jun/2019 20:11:42] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 20:31:27] "GET /sudoku HTTP/1.1" 200 -
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+1
+start solve 12
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "__init__.py", line 81, in <module>
+    app.run(host="172.31.9.93", port=80, debug=True)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 944, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "__init__.py", line 81, in <module>
+    app.run(host="172.31.9.93", port=80, debug=True)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 944, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [25/Jun/2019 21:52:20] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:23] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:27] "GET /solve_sudoku?question=000040090061000000000010300000001042070008006200003005536900000000000000107250000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:32] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:36] "GET /solve_sudoku?question=070068000004010000000700610001000090090020700000500000800090501020300000000005006 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:40] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:52:42] "GET /solve_sudoku?question=500090200002007000080000500014005000000903000000800000003000000600200000809060000 HTTP/1.1" 200 -
+118.24.151.64 - - [25/Jun/2019 21:54:55] "GET /TP/public/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:55] "GET /TP/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:56] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:56] "GET /html/public/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:57] "GET /public/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:57] "GET /TP/html/public/index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:57] "GET /elrekt.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:58] "GET /index.php HTTP/1.1" 404 -
+118.24.151.64 - - [25/Jun/2019 21:54:58] "GET / HTTP/1.1" 200 -
+easy 1
+start solve 12
+end solve 13
+1
+218.98.33.171 - - [25/Jun/2019 21:55:23] "GET /solve_sudoku?question=610300800000800490000000001090000030045120000000007050008000000060403200009280000 HTTP/1.1" 200 -
+218.98.33.171 - - [25/Jun/2019 21:58:37] "GET /sudoku HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 21:58:47] "GET /sudoku HTTP/1.1" 200 -
+54.183.226.185 - - [25/Jun/2019 21:58:47] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 304 -
+54.183.226.185 - - [25/Jun/2019 21:59:00] "GET /sudoku HTTP/1.1" 200 -
+117.136.38.175 - - [25/Jun/2019 22:39:29] "GET /?nsukey=gszEI6Wx2kYhsQzoOFseyKj%2BauVYgYhfJVlkKSiJXi016X%2F%2BtBzF7mbVsxl7s6FqNMdR6W7XXKpCnZtldGnL42XzgCZX9KZFoJ0tThoyOaT2lAARQ9gsR6KY707ksccNw0WFOs7YzLuNGLIO4FjcOatp%2BKtY2K13f536stoQwQ%2FxmJJoFJUOiFrZrSBF7showQEbilyadX1dF0c%2FvyFQcQ%3D%3D HTTP/1.1" 200 -
+117.136.38.175 - - [25/Jun/2019 22:39:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+61.151.178.197 - - [25/Jun/2019 22:40:23] "GET / HTTP/1.1" 200 -
+101.89.239.216 - - [25/Jun/2019 22:40:28] "GET /?nsukey=gszEI6Wx2kYhsQzoOFseyKj%2BauVYgYhfJVlkKSiJXi016X%2F%2BtBzF7mbVsxl7s6FqNMdR6W7XXKpCnZtldGnL42XzgCZX9KZFoJ0tThoyOaT2lAARQ9gsR6KY707ksccNw0WFOs7YzLuNGLIO4FjcOatp%2BKtY2K13f536stoQwQ%2FxmJJoFJUOiFrZrSBF7showQEbilyadX1dF0c%2FvyFQcQ%3D%3D HTTP/1.1" 200 -
+89.248.172.90 - - [25/Jun/2019 23:08:16] "GET http://httpheader.net/ HTTP/1.1" 200 -
+89.248.172.90 - - [25/Jun/2019 23:08:56] code 400, message Bad request syntax ('\x05\x01\x00')
+89.248.172.90 - - [25/Jun/2019 23:08:56] " " HTTPStatus.BAD_REQUEST -
+36.71.234.141 - - [25/Jun/2019 23:28:50] "GET / HTTP/1.1" 200 -
+201.1.87.31 - - [25/Jun/2019 23:57:07] "GET / HTTP/1.1" 200 -
+198.108.66.80 - - [26/Jun/2019 00:27:20] "GET / HTTP/1.1" 200 -
+96.126.45.234 - - [26/Jun/2019 00:44:39] "GET / HTTP/1.1" 200 -
+2.181.25.255 - - [26/Jun/2019 01:26:45] "GET / HTTP/1.1" 200 -
+2.181.3.86 - - [26/Jun/2019 02:40:05] "GET / HTTP/1.1" 200 -
+87.250.40.30 - - [26/Jun/2019 03:11:49] "GET / HTTP/1.1" 200 -
+177.84.41.252 - - [26/Jun/2019 03:21:47] "GET / HTTP/1.1" 200 -
+212.69.18.63 - - [26/Jun/2019 03:33:56] "GET / HTTP/1.1" 200 -
+104.248.221.110 - - [26/Jun/2019 03:57:32] "GET / HTTP/1.1" 200 -
+106.75.64.59 - - [26/Jun/2019 04:24:04] "GET / HTTP/1.0" 200 -
+120.52.152.20 - - [26/Jun/2019 04:24:05] "GET / HTTP/1.1" 200 -
+103.61.100.220 - - [26/Jun/2019 04:36:05] "GET / HTTP/1.1" 200 -
+54.91.108.38 - - [26/Jun/2019 05:19:03] "GET / HTTP/1.1" 200 -
+152.250.109.71 - - [26/Jun/2019 07:32:02] "GET / HTTP/1.1" 200 -
+176.122.210.136 - - [26/Jun/2019 07:36:56] "GET / HTTP/1.1" 200 -
+176.122.210.136 - - [26/Jun/2019 07:37:17] "GET / HTTP/1.1" 200 -
+132.145.157.64 - - [26/Jun/2019 08:06:57] "GET /TP/public/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /TP/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /html/public/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /public/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /TP/html/public/index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /elrekt.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:58] "GET /index.php HTTP/1.1" 404 -
+132.145.157.64 - - [26/Jun/2019 08:06:59] "GET / HTTP/1.1" 200 -
+200.21.57.254 - - [26/Jun/2019 08:30:49] "GET / HTTP/1.0" 200 -
+138.117.60.227 - - [26/Jun/2019 08:50:42] "GET / HTTP/1.1" 200 -
+187.57.95.83 - - [26/Jun/2019 10:02:10] "GET /Login.htm HTTP/1.1" 404 -
+103.108.120.233 - - [26/Jun/2019 10:06:31] "GET / HTTP/1.1" 200 -
+88.87.166.18 - - [26/Jun/2019 10:09:57] "GET / HTTP/1.1" 200 -
+177.22.70.130 - - [26/Jun/2019 11:01:21] "GET /moo HTTP/1.1" 404 -
+198.108.66.80 - - [26/Jun/2019 12:02:30] "GET / HTTP/1.1" 200 -
+71.6.232.4 - - [26/Jun/2019 12:58:53] "GET / HTTP/1.1" 200 -
+121.221.167.235 - - [26/Jun/2019 13:26:15] "GET / HTTP/1.1" 200 -
+36.81.7.236 - - [26/Jun/2019 14:07:43] "GET / HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:36] "GET /?nsukey=l5WZMc8hjvvW2UjM50d6prf53NEa0k7mbSMZW6CgHjy%2FZrKDiN%2FWuhkJN3CWtDeWZz8FwxBo74d0%2B4h8vvBOySkZl9uuprcPmnnyDhQdpHAaiK%2FbFmIF9zfvdbvIzu%2FzPFlr%2BzKxhfnuQuydDtT81ytNys512Xj1ynEnSza%2FmUk8%2BTgHAr6b%2BQKpuXve07B1P25BvnqX8RRkVYJeddQRFQ%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:43] "GET /calc_lixi HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:45] "GET /calc_lixi?nsukey=ORJ4QQWMhZi0DvQYnsrSFEr%2F%2B%2Bfjpzdz7rG%2FASVlxGS7MDpUQikfEPA9JzSSM8F2yWqfNYx6IRvEEy7KKzl%2Bfwvn8j4P9cPNuES1LCJCHHIQneZhKSny%2BWsenpp%2BlWdQ2erOY3woiIMkQnXqxeVwkSGIgsWP8l7oOrKh1sDMhafyrsuJoiubuCBr8pBRRVhtHgq5JeyfWiH%2F7uOnL073Ug%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:51] "GET /?nsukey=j%2BGnueIr6mW2oZPknex4UzVLJQdPjihAlQemVA1kiKmGa48n4Kqllil5eCj70%2FaA6agaMKg177FSzcz%2FpawxHeG%2FSJSVdhuM6A4R6c8Z%2Fx%2BH2kO%2BMmh4V%2BXHFxP0gRSn6IJO6z75DiPiifdy%2FUqrKuE3bmyIoQ53PaEz6i5HK1iFIL5u99Ki%2Ffns7SLCvEHzNPi%2FAzRsZP5L%2B8vhr2lwgg%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:55] "GET /ipo_info HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:28:57] "GET /ipo_info?nsukey=bwsj7%2FXHNCA0J6G3exkrKbqRPgwvE8iTrWaOuwdwTNjQ6sRKZrfnDSoQyyd0OsEYF%2Bl4GHCa7aHuhJcU2zQ0BylUjNd8JRIJPekBIni25E4Fz0LEvHHXe3Oi%2BV%2FFFUHPJy7dBx%2BD%2FuQGNW7X%2BVUNaY02GusyNLhHCzCp4MD81mUpeOqH9MpfkiVSftWT4jisgBEr2MpWyaTP%2FZTgavyVsA%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:29:20] "GET /?nsukey=w6VuwCW5Z20ytaNJz9HfJX0SgGosPkWJswbWVIF4Ue0toDZ42x7qe7ishIaNou3x31eDx5LuKzeeasM837k%2FpdJ6AvqEe8G2NAVGLo%2FwcO6Ly6OJ4v%2FL5USte7TYgfEz6U5FB4CS%2B%2BqH8lZm84YFYDUfmIbnZkKtE5xPgUFzr1ymw6AGStGf4YpUM7DuQ6tLzJiujnes15waD1TGhz%2BVkg%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:29:25] "GET /sudoku HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:29:27] "GET /sudoku?nsukey=%2B3dNgr%2F%2FdxP2QPtzw1g2AItRoGAO4tF31cO%2FPrYJxcwNOSCpuBBO%2FNFYGxB6fLwO004JHmXN3WGdBj%2F6xzkTuJB0vXrK02S2RrwQcfviGgsKRrdLernNAGs0V5zuwOBKiMMpgcoZbKmF0hk0ffaFr78tIOSyQqczb1pm013xn9VQjEihkNboe1LnHZMIpVJ249fBSo68Z1xgKSSOlI5TQg%3D%3D HTTP/1.1" 200 -
+117.136.0.183 - - [26/Jun/2019 14:29:28] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 200 -
+101.89.29.92 - - [26/Jun/2019 14:29:43] "GET /?nsukey=l5WZMc8hjvvW2UjM50d6prf53NEa0k7mbSMZW6CgHjy%2FZrKDiN%2FWuhkJN3CWtDeWZz8FwxBo74d0%2B4h8vvBOySkZl9uuprcPmnnyDhQdpHAaiK%2FbFmIF9zfvdbvIzu%2FzPFlr%2BzKxhfnuQuydDtT81ytNys512Xj1ynEnSza%2FmUk8%2BTgHAr6b%2BQKpuXve07B1P25BvnqX8RRkVYJeddQRFQ%3D%3D HTTP/1.1" 200 -
+101.89.29.86 - - [26/Jun/2019 14:29:58] "GET /calc_lixi?nsukey=ORJ4QQWMhZi0DvQYnsrSFEr%2F%2B%2Bfjpzdz7rG%2FASVlxGS7MDpUQikfEPA9JzSSM8F2yWqfNYx6IRvEEy7KKzl%2Bfwvn8j4P9cPNuES1LCJCHHIQneZhKSny%2BWsenpp%2BlWdQ2erOY3woiIMkQnXqxeVwkSGIgsWP8l7oOrKh1sDMhafyrsuJoiubuCBr8pBRRVhtHgq5JeyfWiH%2F7uOnL073Ug%3D%3D HTTP/1.1" 200 -
+61.129.6.251 - - [26/Jun/2019 14:29:58] "GET /ipo_info?nsukey=bwsj7%2FXHNCA0J6G3exkrKbqRPgwvE8iTrWaOuwdwTNjQ6sRKZrfnDSoQyyd0OsEYF%2Bl4GHCa7aHuhJcU2zQ0BylUjNd8JRIJPekBIni25E4Fz0LEvHHXe3Oi%2BV%2FFFUHPJy7dBx%2BD%2FuQGNW7X%2BVUNaY02GusyNLhHCzCp4MD81mUpeOqH9MpfkiVSftWT4jisgBEr2MpWyaTP%2FZTgavyVsA%3D%3D HTTP/1.1" 200 -
+61.129.6.147 - - [26/Jun/2019 14:30:02] "GET /calc_lixi HTTP/1.1" 200 -
+61.129.6.151 - - [26/Jun/2019 14:30:07] "GET /?nsukey=j%2BGnueIr6mW2oZPknex4UzVLJQdPjihAlQemVA1kiKmGa48n4Kqllil5eCj70%2FaA6agaMKg177FSzcz%2FpawxHeG%2FSJSVdhuM6A4R6c8Z%2Fx%2BH2kO%2BMmh4V%2BXHFxP0gRSn6IJO6z75DiPiifdy%2FUqrKuE3bmyIoQ53PaEz6i5HK1iFIL5u99Ki%2Ffns7SLCvEHzNPi%2FAzRsZP5L%2B8vhr2lwgg%3D%3D HTTP/1.1" 200 -
+101.91.60.104 - - [26/Jun/2019 14:30:11] "GET /ipo_info HTTP/1.1" 200 -
+101.227.139.161 - - [26/Jun/2019 14:30:31] "GET /sudoku?nsukey=%2B3dNgr%2F%2FdxP2QPtzw1g2AItRoGAO4tF31cO%2FPrYJxcwNOSCpuBBO%2FNFYGxB6fLwO004JHmXN3WGdBj%2F6xzkTuJB0vXrK02S2RrwQcfviGgsKRrdLernNAGs0V5zuwOBKiMMpgcoZbKmF0hk0ffaFr78tIOSyQqczb1pm013xn9VQjEihkNboe1LnHZMIpVJ249fBSo68Z1xgKSSOlI5TQg%3D%3D HTTP/1.1" 200 -
+101.89.29.97 - - [26/Jun/2019 14:30:31] "GET /sudoku HTTP/1.1" 200 -
+101.89.29.92 - - [26/Jun/2019 14:30:35] "GET /?nsukey=w6VuwCW5Z20ytaNJz9HfJX0SgGosPkWJswbWVIF4Ue0toDZ42x7qe7ishIaNou3x31eDx5LuKzeeasM837k%2FpdJ6AvqEe8G2NAVGLo%2FwcO6Ly6OJ4v%2FL5USte7TYgfEz6U5FB4CS%2B%2BqH8lZm84YFYDUfmIbnZkKtE5xPgUFzr1ymw6AGStGf4YpUM7DuQ6tLzJiujnes15waD1TGhz%2BVkg%3D%3D HTTP/1.1" 200 -
+101.89.29.97 - - [26/Jun/2019 14:30:44] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 200 -
+101.227.139.161 - - [26/Jun/2019 14:30:46] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 200 -
+101.89.29.86 - - [26/Jun/2019 14:31:38] "GET /sudoku HTTP/1.1" 200 -
+177.185.211.157 - - [26/Jun/2019 14:34:49] "GET / HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:01:14] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:01:14] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 304 -
+218.98.33.171 - - [26/Jun/2019 15:03:27] "GET / HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:03:28] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:03:30] "GET /static/favicon.ico HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:03:34] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:03:35] "GET /static/jquery-2.1.1.min.js HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:03:37] "GET /favicon.ico HTTP/1.1" 404 -
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [26/Jun/2019 15:10:56] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:11:22] "GET /sudoku HTTP/1.1" 200 -
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [26/Jun/2019 15:12:53] "GET /sudoku HTTP/1.1" 200 -
+ * Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://172.31.9.93:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 169-982-947
+218.98.33.171 - - [26/Jun/2019 15:17:45] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:17:47] "GET /sudoku_question HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:17:56] "GET /solve_sudoku?question=070068000004010000000700613001000090090020700000500000800090501020300000000005006 HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:17:56] "GET /solve_sudoku?question=070068000004010000000700613001000090090020700000500000800090501020300000000005006 HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:22:50] "GET /sudoku HTTP/1.1" 200 -
+218.98.33.171 - - [26/Jun/2019 15:22:56] "GET /sudoku HTTP/1.1" 200 -
