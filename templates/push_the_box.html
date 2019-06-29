@@ -1,0 +1,436 @@
+<html>
+        <style type="text/css">
+        input{ border: 1; overflow: hidden; height: 100%; width: 100%;
+                size="1"; pattern="[0-9]";
+        }
+	.div0,.div1,.div2,.div3,.div4,.div5,.div6{ width:40px; height:30px; margin-top:1px} 
+	.div0{ 	border:1px solid #777;} 
+	.div1{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/wall.png);
+		background-repeat: no-repeat;
+	} 
+	.div2{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/flag.jpg);
+		background-repeat: no-repeat;
+	} 
+	.div3{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/man.jpg);
+		background-repeat: no-repeat;
+	} 
+	.div4{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/box.jpg);
+		background-repeat: no-repeat;
+	} 
+	.div5{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/box_under_flag.jpg);
+		background-repeat: no-repeat;
+	} 
+	.div6{ 	border:1px solid #777;
+		background-image:url(./static/push_box_pic/man_under_flag.jpg);
+		background-repeat: no-repeat;
+	} 
+        </style>
+        <script src="./static/jquery-2.1.1.min.js"></script>
+
+        <table border="1" width="70px" align="center">
+                <tr><td>
+        <input type="button" value="解" id="solve"/></br>
+                        </td></tr>
+                <tr>
+                        <td>
+        <input type="button" value="coming soon" id="questioni-"/></br>
+                        </td>
+                </tr>
+        </table>
+                
+        <table border="0" width="480px" align="center">
+		<tr>
+                        <td ><fond></fond></td>
+                        <td align="center"><fond>1</fond></td>
+			<td ><fond>2</fond></td>
+			<td ><fond>3</fond></td>
+			<td ><fond>4</fond></td>
+                        <td ><fond>5</fond></td>
+			<td ><fond>6</fond></td>
+			<td ><fond>7</fond></td>
+			<td ><fond>8</fond></td>
+                        <td ><fond>9</fond></td>
+ 			<td ><fond>10</fond></td>
+                </tr>
+                <tr><td ><fond>1</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>2</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>3</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>4</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>5</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>6</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>7</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>8</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>9</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+                <tr><td ><fond>10</fond></td>
+                        <td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+			<td ><div class="div1"></div></td>
+                        <td ><div class="div1"></div></td>
+                </tr>
+	</table>
+<p id = "info">What a fine day for pushing the box!</p>
+<p><button onclick="clearDiv()">clear</button></p>
+<p><button onclick="startPlaying()">start playing</button></p>
+<p>说明：单机，双击改变地图。没有返回结果可等待一两分钟后重新尝试<p>
+<img src ="./static/push_box_pic/wall.png"> 墙 <br>
+<img src ="./static/push_box_pic/flag.jpg"> 旗 <br>
+<img src ="./static/push_box_pic/man.jpg"> 人 <br>
+<img src ="./static/push_box_pic/box.jpg"> 箱子 <br>
+<img src ="./static/push_box_pic/box_under_flag.jpg"> 箱子和旗重合 <br>
+<img src ="./static/push_box_pic/wa.png"> 墙 <br>
+
+<script type="text/javascript">
+	function disableChange(){
+		var divs = document.getElementsByTagName("div");
+		for( var i=0; i<divs.length; ++i){
+			divs[i].onclick = function(){}
+		}
+	}
+	function move(direction){
+		var divs = document.getElementsByTagName("div");
+		var manIdx = -1, posIdx = -1;
+		for( var i=0; i<divs.length; ++i){
+			posIdx = divs[i].className.substring(divs[i].className.length-1) - 0;
+			if(posIdx == 3 || posIdx == 6){
+				manIdx = i;
+				break;			
+			}
+		}
+		if(manIdx >= 0){
+			if(direction == 1){
+				if( manIdx % 10 == 0) // zui left; 
+					return;
+				var i = manIdx - 1;
+				var posIdx2 = divs[i].className.substring(divs[i].className.length-1) - 0; 
+				if(posIdx2 == 2){
+					divs[i].className = "div6";
+				}else if(posIdx2 == 0){
+					divs[i].className = "div3";
+				}
+				if(posIdx2 == 2 || posIdx2 == 0){
+				   if(posIdx == 6){
+				divs[manIdx].className = "div2";					
+				    }
+				    if(posIdx == 3){
+				divs[manIdx].className = "div0";
+    				    }
+				}
+			}
+			if(direction == 2){
+				if( manIdx >= 0 && manIdx < 10 ) // zui up; 
+					return;
+				var i = manIdx - 10;
+				var posIdx2 = divs[i].className.substring(divs[i].className.length-1) - 0; 
+				if(posIdx2 == 2){
+					divs[i].className = "div6";
+				}else if(posIdx2 == 0){
+					divs[i].className = "div3";
+				}
+				if(posIdx2 == 2 || posIdx2 == 0){
+				   if(posIdx == 6){
+				divs[manIdx].className = "div2";					
+				    }
+				    if(posIdx == 3){
+				divs[manIdx].className = "div0";
+    				    }
+				}
+			}
+			if(direction == 3){
+				if( manIdx % 10 == 9 ) // zui right; 
+					return;
+				var i = manIdx + 1;
+				var posIdx2 = divs[i].className.substring(divs[i].className.length-1) - 0; 
+				if(posIdx2 == 2){
+					divs[i].className = "div6";
+				}else if(posIdx2 == 0){
+					divs[i].className = "div3";
+				}
+				if(posIdx2 == 2 || posIdx2 == 0){
+				   if(posIdx == 6){
+				divs[manIdx].className = "div2";					
+				    }
+				    if(posIdx == 3){
+				divs[manIdx].className = "div0";
+    				    }
+				}
+			}
+			if(direction == 4){
+				if( manIdx >=90 && manIdx <= 99 ) // zui down; 
+				return;
+				var i = manIdx + 10;
+				var posIdx2 = divs[i].className.substring(divs[i].className.length-1) - 0; 
+				if(posIdx2 == 2){
+					divs[i].className = "div6";
+				}else if(posIdx2 == 0){
+					divs[i].className = "div3";
+				}
+				if(posIdx2 == 2 || posIdx2 == 0){
+				   if(posIdx == 6){
+				divs[manIdx].className = "div2";					
+				    }
+				    if(posIdx == 3){
+				divs[manIdx].className = "div0";
+    				    }
+				}
+			}
+		}
+	}
+	function startPlaying(){
+		var divs = document.getElementsByTagName("div");
+		var cntMan = 0, cntBox = 0, cntFlag = 0;
+		for( var i=0; i<divs.length; ++i){			
+			var idx = divs[i].className.substring(divs[i].className.length-1) - 0;
+			if(idx == 2){
+				cntFlag = cntFlag + 1;			
+			}else if(idx == 3){
+				cntMan = cntMan + 1;
+			}else if(idx == 4){
+				cntBox = cntBox + 1;
+			}else if(idx == 5){
+				cntBox = cntBox + 1;
+				cntFlag = cntFlag + 1;
+			}else if(idx == 6){
+				cntMan = cntMan + 1;
+				cntFlag = cntFlag + 1;
+			}
+		}
+		var info = document.getElementById("info");
+		if( cntMan != 1 ){
+			
+			info.innerHTML = "More than one man!";
+			return;
+		}else if(cntBox != cntFlag ){
+			info.innerHTML = "#Flag != #Box";
+			return;
+		}else{
+			disableChange();
+			info.innerHTML = "Playing... Can't change the map..." + "#Man :" + cntMan + "; #Flag :" + cntFlag + "; #Box :" + cntBox;
+		}
+	}
+	function clearDiv(){
+		var divs = document.getElementsByTagName("div");
+		for( var i=0; i<divs.length; ++i){
+			divs[i].className = "div1";
+			if( i % 10 == 9 || i >= 90)
+				continue;
+			divs[i].onclick = function(){
+				var idx = this.className.substring(this.className.length-1);
+				var newIdx = ((idx - 0) + 1) % 7;
+				this.className = "div"+newIdx;
+		
+			}
+			divs[i].ondblclick = function(){
+				this.className = "div0";
+			}
+		}
+		$("#info").text("What A fine day for pushing the box!");
+	}
+	window.onload = function(){
+		var divs = document.getElementsByTagName("div");
+		for( var i=0; i<divs.length; ++i){
+			if( i % 10 == 9 || i >= 90)
+				continue;
+			divs[i].onclick = function(){
+				var idx = this.className.substring(this.className.length-1);
+				var newIdx = ((idx - 0) + 1) % 7;
+				this.className = "div"+newIdx;
+			}
+			divs[i].ondblclick = function(){
+				this.className = "div0";
+			}
+		}
+		//onkeydown
+		document.onkeydown = function(ev){
+			var ev = ev || window.event;
+			switch(ev.keyCode){
+				case 37:
+				case 100: move(1); break; //left
+				case 38:
+				case 104: move(2); break; // up
+				case 39:
+				case 102: move(3); break; // right
+				case 40:
+				case 98: move(4); break; // down
+			}
+		}
+			
+	}
+	function ps(){
+		var divs = document.getElementsByTagName("div");
+		var s = "";
+		for(var i=0; i<divs.length; ++i){
+			idx = divs[i].className.substring(divs[i].className.length-1) -0;
+			switch(idx){
+			case 0: s = s + "="; break;
+			case 1: s = s + "x"; break;
+			case 2: s = s + "f"; break;
+			case 3: s = s + "$"; break;
+			case 4: s = s + "b"; break;
+			case 5: s = s + "o"; break;
+			case 6: s = s + "y"; break;
+			
+			}
+		}
+		return s;
+	}
+	$(function(){
+                    idx = -1;
+                    $("#solve").bind("click", function(){
+			//alert(1);
+                        var ques = ps();
+	//alert(2);			
+                        if(ques.length != 100){
+                               alert("errro");
+                            return 0;
+                        }
+			var cntc = 0;
+			for(var i=0; i<ques.length; ++i){
+				if(ques[i] == "=")
+					cntc = cntc+1;
+			}
+			if( cntc > 30 ){
+				alert("下次做");
+			}
+                        //alert(8);
+                        //alert(ques);
+                        $("#info").text("计算中...");
+                        var maxreq = -1;
+                        var interval = setInterval(function(){
+                                maxreq = maxreq +1;
+				if( maxreq % 10 == 0)
+                                if( $("#info").text() == "计算中..."){
+                                    $.getJSON(
+                                        "/solve_push_box",
+                                        {question : ques},
+                                        function(data){
+                                              ans = data['answer'];
+                                                //alert(ans);
+                                                $("#info").text("查看结果:" + ans);
+                                                clearInterval(interval);
+                                        }
+                                    );
+
+                                }
+				//alert(maxreq);
+                                if(maxreq >= 100){
+					//alert("stop");
+                                        $("#info").text("今天太累，下次再说");
+                                        clearInterval(interval);
+                                }
+                        }, 300);
+                        //alert(222);
+                    });
+	});
+	
+</script>
+</html>

@@ -81,6 +81,44 @@ def sudoku_question():
     idx = random.randint(0, len(files)-1)
     return jsonify(question = str(files[idx]))
 
+
+@app.route('/push_the_box')
+def push_box():
+    return render_template('push_the_box.html')
+
+ptb = ctypes.CDLL('/var/www/FlaskApp/FlaskApp/pushbox.so')
+ptbfree = True;
+@app.route("/solve_push_box", methods=['GET', 'POST'])
+def solve_push_box():
+    global ptbfree
+    m = request.args.get("question");
+    row = 10; #request.args.get("row");
+    col = 10; # request.args.get("col");
+    #print(m);
+    #return jsonify(answer ="test");
+    path = "/push_box_res/" + str(m);
+    if os.path.exists( path ):
+        with open(path, "r") as f:
+            res = f.read();
+            return jsonify(answer = res)
+    if ptbfree == False:
+        return jsonify(answer = "暂时有点忙");
+    ptbfree = False;
+    with open("map_push_box.txt", "w") as f:
+        f.write(str(m));
+    feedback = ptb.solve_push_box(int(row), int(col));
+    ptbfree = True;
+   # return jsonify(answer ="test");
+    if(feedback == -1):
+        return jsonify(answer = "无解")
+    elif feedback == -2:
+        return jsonify(answer = "非法输入")
+    else:
+        res = ''
+        with open("push_box_res/" + str(m), "r") as f:
+            res = f.read()
+        return jsonify(answer =  res);
+
 if __name__ == "__main__":
     app.run(host="172.31.9.93", port=80, debug=True)
     #app.run()
