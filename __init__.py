@@ -12,6 +12,7 @@ def hello():
     print("hello request")
     return '{ "A" : "Hi there, how ya doin?" }'
 
+@app.route('/index')
 @app.route('/')
 def homepage():
     ip = request.remote_addr

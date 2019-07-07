@@ -31,7 +31,7 @@ r =   urllib.request.Request(url=path, headers=h)
 
 cnt = 0
 
-while(cnt < 1):
+while(True):
     cnt = cnt + 1
     try:
         ht =  urllib.request.urlopen(r).read() 
